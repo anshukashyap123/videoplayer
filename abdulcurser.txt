@@ -1,0 +1,10 @@
+ boolean sameName = false;
+            Cursor cursor = dbHandler.getNameFromLocalDB();
+            while (cursor.moveToNext()) {
+                if (cursor.getString(0).equals(username)) {
+                    sameName = true;
+                    break;
+                }
+
+            }
+            if (!sameName){
