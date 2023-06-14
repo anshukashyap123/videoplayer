@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activties.Signup.BusinessDetailFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/_10sdp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/linear_signUPFormBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:boxBackgroundMode="outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_businessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/gray"
+                        android:fontFamily="@font/muli_semibold"
+                        android:hint="Business Name"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:boxBackgroundMode="outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_businessContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/gray"
+                        android:fontFamily="@font/muli_semibold"
+                        android:hint="Business Contact No"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:boxBackgroundMode="outline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_businessAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/gray"
+                        android:fontFamily="@font/muli_semibold"
+                        android:hint="Business Address"
+                        android:inputType="textCapSentences|textNoSuggestions|text"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" select State"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <!-- <Spinner
+                             android:id="@+id/sp_maincategory"
+                             android:layout_width="140dp"
+                             android:layout_height="30dp"
+                             android:layout_below="@+id/view"
+                             android:layout_alignParentEnd="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginEnd="10dp"
+                             android:background="@drawable/box_with_dropdown" />
+        -->
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_State"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/back_edit_text"
+                            android:hint="State"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <!-- <Spinner
+                             android:id="@+id/sp_category"
+                             android:layout_width="140dp"
+                             android:layout_height="30dp"
+                             android:layout_below="@+id/view"
+                             android:layout_alignParentEnd="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginEnd="5dp"
+                             android:background="@drawable/box_with_dropdown" />-->
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/back_edit_text"
+                            android:hint="Select City"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="10"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PinCode"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <!-- <Spinner
+                             android:id="@+id/sp_maincategory"
+                             android:layout_width="140dp"
+                             android:layout_height="30dp"
+                             android:layout_below="@+id/view"
+                             android:layout_alignParentEnd="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginEnd="10dp"
+                             android:background="@drawable/box_with_dropdown" />
+        -->
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/et_pinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/back_edit_text"
+                            android:hint="PinCode"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mark Location"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/mapLocation"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/map">
+
+                        </ImageView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Latitude"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <!-- <Spinner
+                             android:id="@+id/sp_maincategory"
+                             android:layout_width="140dp"
+                             android:layout_height="30dp"
+                             android:layout_below="@+id/view"
+                             android:layout_alignParentEnd="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginEnd="10dp"
+                             android:background="@drawable/box_with_dropdown" />
+        -->
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_Latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/back_edit_text"
+                            android:hint="Latitude"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Longitude"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <!-- <Spinner
+                             android:id="@+id/sp_category"
+                             android:layout_width="140dp"
+                             android:layout_height="30dp"
+                             android:layout_below="@+id/view"
+                             android:layout_alignParentEnd="true"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginEnd="5dp"
+                             android:background="@drawable/box_with_dropdown" />-->
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:id="@+id/tv_Longitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/back_edit_text"
+                            android:hint="Longitude"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="10"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Select  Store Open days"
+                        android:textColor="@color/black"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:id="@+id/cb_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sunday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/cb_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/cb_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tuesday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/cb_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wednesday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:id="@+id/cb_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thursday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+
+                        <CheckBox
+                            android:id="@+id/cb_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Friday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/cb_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saturday"
+                            android:textSize="12sp">
+
+                        </CheckBox>
+
+
+                    </LinearLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Store Open At"
+                        android:textColor="@color/black"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/linear_storeOpenAt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_openSetTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="00:00"
+                            android:textColor="#605E5E"
+                            android:textSize="25sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/img_openAt"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/tv_openSetTime"
+                            android:src="@drawable/ic_baseline_access_time_24">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Store Close At"
+                        android:textColor="@color/black"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/linear_storeCloseAt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_closeSetTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:hint="00:00"
+                            android:textColor="#605E5E"
+                            android:textSize="25sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/img_closeAt"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/tv_closeSetTime"
+                            android:src="@drawable/ic_baseline_access_time_24">
+
+                        </ImageView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_nextFromBusiness"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/green"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_circle_right"
+                    android:fontFamily="@font/muli_semibold"
+                    android:text="Next"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

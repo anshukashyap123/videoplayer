@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activties.Signup.PersonalDetailsFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/_10sdp"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/linear_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:background="@drawable/edit"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli_bold"
+                            android:text="Sign UP"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli_bold"
+                            android:text="Sign UP with your mobile number."
+                            android:textColor="#878282"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:boxBackgroundMode="outline"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_mobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_outline_send_to_mobile_24"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/gray"
+                            android:fontFamily="@font/muli_semibold"
+                            android:hint="Mobile"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+
+                        android:id="@+id/btn_verifyOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:backgroundTint="@color/purple_500"
+                        android:fontFamily="@font/muli_semibold"
+                        android:gravity="center"
+                        android:text="Verify"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_signUPForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:boxBackgroundMode="outline"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_otpNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_outline_key_24"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/gray"
+                                android:fontFamily="@font/muli_semibold"
+                                android:hint="OTP"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tv_resendOtp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/muli_bold"
+                            android:text="Resend OTP"
+                            android:textColor="@color/green" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:boxBackgroundMode="outline"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_sponsorId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_baseline_groups_24"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/gray"
+                                android:fontFamily="@font/muli_semibold"
+                                android:hint="Sponsor Id"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sponsorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/muli_bold"
+                            android:text="SponsorName"
+                            android:textColor="@color/green"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        app:boxBackgroundMode="outline"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_baseline_person"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/gray"
+                            android:fontFamily="@font/muli_semibold"
+                            android:hint="Vendor Name"
+                            android:inputType="textCapSentences|textNoSuggestions|text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:boxBackgroundMode="outline"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_lastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_baseline_person"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/gray"
+                            android:fontFamily="@font/muli_semibold"
+                            android:hint=" Contact Name"
+                            android:inputType="textCapSentences|textNoSuggestions|text"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:boxBackgroundMode="outline"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_outline_email_24"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/gray"
+                            android:fontFamily="@font/muli_semibold"
+                            android:hint="Email"
+                            android:inputType="textNoSuggestions|textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!-- <com.google.android.material.textfield.TextInputLayout
+                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="10dp"
+                         app:boxBackgroundMode="outline"
+                         app:layout_constraintBottom_toBottomOf="parent"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent">
+
+                         <com.google.android.material.textfield.TextInputEditText
+                             android:id="@+id/et_mobNo"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:drawableStart="@drawable/ic_outline_send_to_mobile_24"
+                             android:drawablePadding="10dp"
+                             android:drawableTint="@color/gray"
+                             android:fontFamily="@font/muli_semibold"
+                             android:hint="Mobile No"
+                             android:inputType="number"
+                             android:maxLength="10"
+                             android:textColor="@color/black"
+                             android:textSize="14sp" />
+
+                     </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:boxBackgroundMode="outline"
+                        app:helperText="Password Must be 1 Upper Case ,1 LowerCase,1 Special symbol,At least 1 digit &amp; Minimum 8 in length"
+                        app:helperTextTextColor="@color/red"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0,1,2,3,4,5,6,7,8,9,*@#$%_-\\^.qwertzuiopasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:drawableStart="@drawable/ic_baseline_lock_24"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/gray"
+                            android:fontFamily="@font/muli_semibold"
+                            android:hint="@string/password"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/btn_signUpNext"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:backgroundTint="@color/green"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_circle_right"
+                        android:fontFamily="@font/muli_semibold"
+                        android:text="Next"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
