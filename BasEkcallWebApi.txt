@@ -1,0 +1,197 @@
+{"UserId":"28297","TokenId":"YwA2AGQATgBsAEsAaABnAEEAQAA="}https://basekcall.com/ShoppingApi/UserCartDetail
+{"UserId":"28297","TokenId":"YwA2AGQATgBsAEsAaABnAEEAQAA=","ProductOptionSetId":6431,"ProductId":8599,"VendorId":181,"Qty":1,"BusinessValue":"0","RedeemPoint":"0"} ,https://basekcall.com/ShoppingApi/AddToCart
+
+{"UserId":"28297","TokenId":"UwBvAGcARQBtAHIAWAB0AGEAdAA=","ProductOptionSetId":6438,"ProductId":8608,"VendorId":181,"Qty":1,"BusinessValue":"0","RedeemPoint":"0"} ,https://basekcall.com/ShoppingApi/AddToCart
+
+
+{"UserId":"28297","TokenId":"UwBvAGcARQBtAHIAWAB0AGEAdAA="}https://basekcall.com/ShoppingApi/UserCartDetail
+==========================================================================================================
+   jsonObject.put("ProductId", posId);
+{"ProductId":6431}
+{"ProductId":"6438"}
+https://basekcall.com/ShoppingApi/GetProductBySearchBar
+
+=========================================================
+UpdateUserProfile
+ params.put("MId", userId);
+        params.put("EmailData", Edt_emailId.getText().toString().trim());
+        params.put("FirstName", Edt_Firstlname.getText().toString().trim());
+        params.put("LastName", Edt_Lastname.getText().toString().trim());
+        params.put("DOB", Edt_Dob.getText().toString().trim());
+        params.put("ProfileImage", ProductImg.trim());
+====================================================
+
+Web_Services.ViewProfile,  jb.put("MId", userId);
+
+
+
+
+private static final String BASE_URL = "https://basekcall.com/WebAPI/";
+    private static final String BASE_URL_Second = "https://webapi.basekcall.com/api/Ecommerce/";
+    private static final String BASE_URL_third = "https://basekcall.com/ECommerce/";
+    private static final String DomainFinal_BASE_URL = "https://basekcall.com/ShoppingApi/";
+
+////************************************BaseUrl*****************************************************
+https://webapi.basekcall.com/api/Ecommerce/GetMainCategory 
+ public static final String FetchFeatureProductAll = BASE_URL_third + "FetchFeatureProductAll";
+
+========1_june_2023====
+
+            jsonObject.put("MainCategoryId", mainCatId);
+            jsonObject.put("latitude", Latitude);
+            jsonObject.put("longitude", Longitude);
+
+            api==GetVendorListByMainCategpry
+
+=======1_june_2023====
+Top vendor item
+
+GetCategoryByVendorId//    jsonObject.put("VendorId", VendorId);
+productList //    jsonObject.put("MId", userId);
+                  jsonObject.put("categoryId", categoryId);
+                  jsonObject.put("VendorId", vendorId);
+
+*****************************************************************************************
+popular vendor list parameter 
+                           ---   latitude,longitude 
+
+top 10
+latitude,longitude
+ jsonObject.put("ActionMode", "Get10List"); top ten==>>GetVendorListByType
+
+
+
+//Login credential
+
+
+9920202020
+123456 user 
+
+
++++++++++++++++++++++++++++++  681480 +++++++++++
+
+
+ params.put("UserName", userID);
+        params.put("Pswd", password);
+        params.put("DeviceId", identifier);
+        params.put("FireBaseID", "xyz");
+
+
+{"UserName":"9956565656","Pswd":"123456","DeviceId":"ed10415431be78fe","FireBaseID":"xyz"}
+    https://basekcall.com/WebAPI/SignIn
+***********************
+MobileNo
+
+
+ params.put("OTP", et_otpNumber.getText().toString().trim());
+        params.put("Pswd", et_password.getText().toString().trim());
+        params.put("UserId", userId);
+        params.put("Email", et_email.getText().toString().trim());
+        params.put("Fname", et_name.getText().toString().trim());
+        params.put("Lname", et_lastName.getText().toString().trim());
+        params.put("Dob", "");
+        params.put("Gender", "");
+        params.put("DeviceId", identifier);
+        params.put("DocType", "");
+        params.put("DocNumber", "");
+        params.put("ReferralCode", et_sponsorId.getText().toString().trim());
+        params.put("JoiningLeg", "0");
+
+
+
+
+
+
+{"MobileNumber":"2588887747","Email":null,"UserId":null,"WalletBalance":0,"Name":null,
+"EtakaId":null,"ReferralCode":null,"IsMembershipActive":false,"FacebookIdStatus":false,
+"CenterStatus":false,"MembershipValidTill":null,"QrImage":null,"ReferralLeg":null,
+"CompanyName":null,"TokenId":"","LoginStatus":false,"Status":false,
+"Message":"Someone already has this email id. Try another email id"}
+
+
+
+
+////************************************BaseUrl*****************************************************
+    public static final String GET_OTP = BASE_URL + "SignUp";
+
+    public static final String DO_REGISTRATION = BASE_URL + "SignUpOTP";
+    public static final String SignIn = BASE_URL + "SignIn";
+
+    public static final String GetSponcerDetail = BASE_URL + "GetSponcerDetail";
+    public static final String GetPopularVendorList = BASE_URL + "GetPopularVendorList";
+    public static final String UpdateUserProfile = BASE_URL + "UpdateUserProfile";
+
+    public static final String FollowerReport = BASE_URL + "FollowerReport";
+
+
+
+//***************************************************************************************************
+
+
+
+//**********************************BaseUrlSecond*******************************************************
+
+    public static final String MAIN_CATEGORY = BASE_URL_Second + "GetMainCategory";
+    public static final String GetBannerImages =BASE_URL_Second + "GetBannerImages";
+    public static final String FetchFlashDeal = BASE_URL_third + "FetchFlashDeal";
+    public static final String FetchFeatureProduct = BASE_URL_third + "FetchFeatureProduct";
+    public static final String FetchFreshProduct = BASE_URL_third + "FetchFreshProduct";
+    public static final String GetCategoryByVendorId = BASE_URL_Second+"GetCategoryByVendorId";
+
+
+
+
+
+    public static final String SUB_CATEGORY = BASE_URL_Second + "GetCategoryByMainCategoryID?mainCategoryID=";
+    public static final String ViewProfile = BASE_URL+"GetUserProfile";
+
+
+    public static final String AddMoneyRazorpay = BASE_URL_Second + "AddMoneyRazorpay";
+    public static final String WalletBalance = BASE_URL + "WalletBalance";
+    public static final String SearchProduct = BASE_URL + "SearchProduct";
+    public static final String CityEnquiry = BASE_URL_Second + "CityEnquiry";
+    public static final String ForgotPassword = BASE_URL_Second + "ForgotPassword";
+    public static final String ForgotPasswordOTP = BASE_URL_Second + "ForgotPasswordOTP";
+
+    public static final String GetVendorListByType = BASE_URL + "GetVendorListByType";
+
+    public static final String UpdateFirebaseId = BASE_URL + "UpdateFirebaseId";
+
+    public static final String GetCurrentLocation = BASE_URL + "GetCurrentLocation";
+
+
+
+
+
+
+
+//*****************************DomainFinal_BASE_URL*********************************************************
+
+
+    public static final String GetVendorProfile = DomainFinal_BASE_URL + "GetVendorProfile";
+    public static final String GetShippingAddress = DomainFinal_BASE_URL + "GetShippingAddress";
+    public static final String AddShippingAddress = DomainFinal_BASE_URL + "AddShippingAddress";
+    public static final String UserCartDetail = DomainFinal_BASE_URL + "UserCartDetail";
+    public static final String GetShoppingOrderList = DomainFinal_BASE_URL + "GetShoppingOrderList";
+    public static final String GetShoppingOrderDetail = DomainFinal_BASE_URL + "GetShoppingOrderDetail";
+    public static final String UpdateCartDetail = DomainFinal_BASE_URL + "UpdateCartDetail";
+    public static final String RemoveCart = DomainFinal_BASE_URL + "RemoveCart";
+    public static final String CreateShoppingOrder = DomainFinal_BASE_URL + "CreateShoppingOrder";
+    public static final String ShoppingPayment = DomainFinal_BASE_URL + "ShoppingPayment";
+    public static final String AddToCart = DomainFinal_BASE_URL + "AddToCart";
+    public static final String productList = DomainFinal_BASE_URL + "GetProductByCategoryVendorId";
+    public static final String GetProductImagesList = DomainFinal_BASE_URL + "GetProductImagesList";
+    public static final String GetVendorListByMainCategpry = DomainFinal_BASE_URL + "GetVendorListByMainCategpry";
+
+
+    public static final String GetProductBySearchBar = DomainFinal_BASE_URL + "GetProductBySearchBar";
+
+
+
+//***************************************************************************************************
+
+
+
+
+  jsonObj.put("term", query);
+SearchProduct
