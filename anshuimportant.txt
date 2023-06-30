@@ -1,0 +1,256 @@
+1=DeliverySignUpOTPAjax
+2=DeliverySignUpOTPVerification
+3= 
+====CustomerApplication======
+GetShoppingOrderList
+FetchFlashDeal
+FetchFreshProduct
+FetchFeatureProduct
+FetchFeatureProductAll
+==========================================
+add firm
+
+ {"username":"001","password":"Om@1234","RegID":"fBNNhMQ50yqBKfxQLVeGUI:APA91bEPCnzTD6m0bk6LMDWTVh1hcomp98v3QA47gbq6D20RECd4oj2qji21vPKzn_snBIqvo27amgGDaig2YHBNr1MrK8K_8IJlzSdBUddGlw6oU1P2EkvCNaePlh6YFOnP20ysZpXL"}
+==========================================
+
+AIzaSyDNtwGBK-zwLHZefjeRYffd-95ZiN9RltQ vendor application api key
+//*****************************************************************************************************************//
+
+SELECT * FROM OTPDetails ORDER BY OTPdate DESC
+SELECT * FROM ShoppingOrderAssign
+SELECT * FROM ShoppingOrderAssign WHERE OrderId='125885'
+SELECT * FROM VendorDetail
+SELECT * FROM OTPDetails ORDER BY OTPdate DESC
+
+ SELECT * FROM OTPDetails  ORDER BY OTPdate DESC
+ SELECT * FROM ShoppingOrderAssign
+
+//*****************************************************************************************************************//
+https://basekcall.com/uploads/Vendor/28169_TinFroof.png
+//*****************************************************************************************************************//
+
+pan===ZNMBF2501F
+Voterid===ycv0164822
+IFSC==SBIN0011642
+//*****************************************************************************************************************//
+1018-//18//23//16//22//21//05//17//25/22//26//21//16//50//7//49//10//19//12//11//50//50
+//*****************************************************************************************************************//
+https://maps.googleapis.com/maps/api/directions/json?origin=26.8739545,81.0059081&destination=26.828203859988175, 80.9233916392612&sensor=false&mode=driving&key=AIzaSyA5XZZtA4i2FiYkaPTLWP6qYt_XsdAfO6U
+
+
+26.8739545","Long":"81.0059081
+ intent.putExtra("VendorName", String.valueOf(data.get(position).getVendorName()));
+
+//**************************Changenetworkconfigdomain in==res-->xml-->networkconfig**********************************************************************//
+
+//*****************************************************************************************************************//
+ Log.e("TAG", "sendOtpRequest: " + jsonObject + "\n" + Web_Services.GET_OTP);
+
+
+https://basekcall.com/WebAPI/SignIn
+
+
+https://webapi.basekcall.com/api/Ecommerce/
+
+
+DECLARE @Body AS VARCHAR(8000) =
+ '{
+   "to":"'+@FireBaseID+'",
+   "data":{"Data1":"'+Convert(varchar(10),@OrderIdC)+'","Data2":"'+Convert(varchar(10),@VendorMIdC)+'", "Data3":"","image": "https://edu.atallia.in//VideoFile/532f27f3-2230-4c7e-b85e-05e90c43cdd6.png"},   
+   "notification":{"title":"Order Recieved From '+@VendorNameC+'",
+   "body":"New Order has been received order No:' +@OrderNoC+ '",
+   "sound":"default",
+   "image": "https://edu.atallia.in//VideoFile/532f27f3-2230-4c7e-b85e-05e90c43cdd6.png"}
+}
+//*****************************************************************************************************************//
+//*******************************quary************************************************************//
+
+FetchFreshProduct,FetchFeatureProduct,FetchFlashDeal
+
+lay_rd_dd_report
+
+lay_finalize_dd
+
+SELECT  * FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1"  LIMIT 500;
+
+SELECT  * FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1"  LIMIT 500;
+SELECT  sum(c) FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1" LIMIT 500 ;
+SELECT  sum(c) FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1" ;
+SELECT  sum(h) FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1" ;
+SELECT  sum(e) FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1" LIMIT 7 ;
+SELECT  sum(e)FROM (SELECT e FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1" ORDER BY id DESC  LIMIT 500)
+SELECT  sum(e)FROM (SELECT e FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  KEY_IS_DONE="1"  LIMIT 500)
+
+
+  <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0sp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="count"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+//*****************************************************************************************************************//
+
+   /*  AlertDialog.Builder builder;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    builder = new AlertDialog.Builder(MainActivity.this);
+                } else {
+                    builder = new AlertDialog.Builder(MainActivity.this);
+                }
+                builder.setTitle("Log Out!");
+                builder.setMessage("Are you sure that you want to Sign Out?")
+                        .setPositiveButton(Html.fromHtml("<font color='#4caf50'>Yes</font>"), (dialog, which) -> {
+                            SavePref.remove(MainActivity.this, "UserId");
+                            SavePref.remove(context, "Lati");
+                            SavePref.remove(context, "Lngi");
+
+
+                            Intent in = new Intent(getApplicationContext(), LoginActivity.class);
+                            startActivity(in);
+                            finishAffinity();
+                        })
+                        .setNegativeButton(Html.fromHtml("<font color='#c70032'>No</font>"), (dialog, which) -> dialog.dismiss())
+                        .show();
+                drawer.closeDrawer(GravityCompat.START);
+                break;
+        }
+    }*/
+//*****************************************************************************************************************//
+//*****************************************************************************************************************//
+
+a100100178//178 kalpana sahu
+
+public String getProductType() {
+		return ProductType;
+	}
+
+	@SerializedName("ProductType")
+	private String ProductType;
+
+ intent.putExtra("ProductType", String.valueOf(listItems.get(position).getProductType()));
+
+SELECT  * FROM storing WHERE KEY_PLAN_TYPE="DD" AND  KEY_INST_NO!="0" AND  LIMIT ="10"
+
+
+
+
+FetchFeatureProduct
+
+Big Summer Sale : Start At MidNight Get Ready For The Biggest Savings On Summer Essential Wishlist Now!!
+
+No Product Find Your List
+
+ String token = "", userId = "";
+  userId = SavePref.getString(context, "UserId");
+        token = SavePref.getString(context, "TokenId");
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        getCartListData();
+    }
+
+    private void getCartListData() {
+        // ProgressBarManager.customProgress(DashboardVendorClick.this, "Please wait..");
+
+        JSONObject jb = new JSONObject();
+        try {
+            jb.put("UserId", userId);
+            jb.put("TokenId", token);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        Log.e("TAG", "UserCartDetail: " + jb + " ," + Web_Services.UserCartDetail);
+        System.out.println("cartListRequest" + jb + Web_Services.UserCartDetail);
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,
+                Web_Services.UserCartDetail, jb, response -> {
+            // ProgressBarManager.customProgressStop();
+            Log.e("TAG", "CartListResponse: " + response.toString());
+
+            try {
+
+                if (response.getString("LoginStatus").equals("true")) {
+
+
+                    Gson gson = new Gson();
+                    DataCartResponse dataCartResponse = gson.fromJson(response.toString(), DataCartResponse.class);
+                    List<CartDetailItem> cartDetailItems = dataCartResponse.getData().getCartDetail();
+
+
+                    JSONObject jsonObject = response.getJSONObject("data");
+                    SavePref.putString(PopularProductNearBy_ViewAll.this,
+                            "cartSize", String.valueOf(jsonObject.getInt("CartCount")));
+                    CartCount.setText(String.valueOf(jsonObject.getInt("CartCount")));
+                  /*  int Qty=0;
+                    for (int i=0; i<dataCartResponse.getData().getCartDetail().size();i++){
+                        Qty=Qty+dataCartResponse.getData().getCartDetail().get(i).getQnty();
+                    }*/
+
+                   /* cartNo = Integer.parseInt(String.valueOf(jsonObject.getInt("CartCount")));
+                    tv_items.setText("("+String.valueOf(dataCartResponse.getData().getCartCount() + " items & "+Qty+"Qty")+")");
+                    tv_totalPrice.setText("₹" + String.valueOf(dataCartResponse.getData().getCartPrice().getTotal()));
+
+                    SavePref.putString(PopularProductNearBy_ViewAll.this,
+                            "TotalPrice", String.valueOf(dataCartResponse.getData().getCartPrice().getTotal()));
+                    if (cartNo == 0) {
+                        rel_bottomCartDetails.setVisibility(View.GONE);
+                    } else {
+                        rel_bottomCartDetails.setVisibility(View.VISIBLE);
+                    }*/
+
+                    // adapterProductListByVId = new Productlist_ByCat.AdapterProductListByVId(this, dataCartResponse.getData().getCartDetail());
+
+
+                } else if (response.getString("LoginStatus").equals("false")) {
+                    Check_Network.customErrorToast(PopularProductNearBy_ViewAll.this, "Device Authentication Failed Please Login Again!!");
+                }
+            } catch (JsonSyntaxException | JSONException e) {
+                e.printStackTrace();
+            }
+
+        }, error -> {
+            ProgressBarManager.customProgressStop();
+            Log.e("TAG", "onErrorResponseCat: " + error.getMessage());
+        });
+        MySingleton.getInstance(PopularProductNearBy_ViewAll.this).addToRequestQueue(jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT)));
+    }
+
+
+DECLARE @Body AS VARCHAR(8000) =
+ '{
+   "to":"'+@FireBaseID+'",
+   "data":{"Data1":"'+Convert(varchar(10),@OrderIdC)+'","Data2":"'+Convert(varchar(10),@VendorMIdC)+'", "Data3":"","image": "https://edu.atallia.in//VideoFile/532f27f3-2230-4c7e-b85e-05e90c43cdd6.png"},   
+   "notification":{"title":"Order Recieved From '+@VendorNameC+'",
+   "body":"New Order has been received order No:' +@OrderNoC+ '",
+   "sound":"default",
+   "image": "https://edu.atallia.in//VideoFile/532f27f3-2230-4c7e-b85e-05e90c43cdd6.png"}
+}'
+
+======================================================
+https://fcm.googleapis.com/fcm/send
+
+{
+    "to":"fBNNhMQ50yqBKfxQLVeGUI:APA91bEPCnzTD6m0bk6LMDWTVh1hcomp98v3QA47gbq6D20RECd4oj2qji21vPKzn_snBIqvo27amgGDaig2YHBNr1MrK8K_8IJlzSdBUddGlw6oU1P2EkvCNaePlh6YFOnP20ysZpXL",
+    "notification": {
+    "title": "NotificationTitle",
+    "body": "NotificationBody",
+    "sound": "default"
+},
+"data":
+        {
+            "Payment": "Sucess",
+            "notification_id": "1"
+            
+        }
+}
+
+{"BranchCode":"002","EntryUser":"056","LoanofficerId":"056","KeyDocRefId":"345464545455","AppName":"Loganathan","MemberLoanType":"0","Gender":"Male","App_DOB":"01\/02\/1950","AppFHName":"S\/O test","AppAddress":"lko","PanNumber":"ZBMBF2501F","AppPinCode":"226003","MobileNumber":"9580095800","AltMobNo":"9580095800","State":"1","Distict":"22","Reg_Date":"26\/06\/2023","FormNo":"","GuardianGuardianName":"test","CorresState":"1","CorreDistrict":"22","CorreAddress":"lko","CorrePinCode":"226003","AadhaarCardDetail":"","LocationType":"Semi-Urban","MemberOccupation":"Select","MemberMonthlyIncome":"100000","GuardianAadharNo":"125454545454","Guardian_DOB":"01\/02\/1950","GuardianGender":"Male","GuardianRelation":"Husband","GuardianOccupation":"Salaried Government","GuardianMonthlyIncome":"10000000","MemberLatitude":"26.873849","MemberLongitude":"81.0058216","MemberAddress":"V2F4+G9V, Ashok Vihar, Patel Nagar, Ismailganj, Indira Nagar, Lucknow, Uttar Pradesh 226028, India"}
+2023-06-26 17:01:24.937 13878-13878/com.samaveshims.test D/LRPro: {"BranchCode":"003","EntryUser":"056","LoanofficerId":"056","KeyDocRefId":"466464646466","AppName":"Loganathan","MemberLoanType":"0","Gender":"Male","App_DOB":"01\/02\/1950","AppFHName":"D\/O Loganathan","AppAddress":"lko","PanNumber":"","AppPinCode":"226003","MobileNumber":"9580095800","AltMobNo":"9580095800","State":"1","Distict":"14","Reg_Date":"26\/06\/2023","FormNo":"","GuardianGuardianName":"test","CorresState":"1","CorreDistrict":"14","CorreAddress":"lko","CorrePinCode":"226003","AadhaarCardDetail":"","LocationType":"Semi-Urban","MemberOccupation":"Select","MemberMonthlyIncome":"10000000","GuardianAadharNo":"245484548848","Guardian_DOB":"01\/02\/1950","GuardianGender":"Male","GuardianRelation":"Husband","GuardianOccupation":"Business","GuardianMonthlyIncome":"1000000","MemberLatitude":"26.8738486","MemberLongitude":"81.0058208","MemberAddress":"V2F4+G9V, Ashok Vihar, Patel Nagar, Ismailganj, Indira Nagar, Lucknow, Uttar Pradesh 226028, India"}
+2023-06-26 17:01:46.174 13878-13878/com.samaveshims.test D/LRPro: {"BranchCode":"003","EntryUser":"056","LoanofficerId":"056","KeyDocRefId":"466464646466","AppName":"Loganathan","MemberLoanType":"0","Gender":"Male","App_DOB":"01\/02\/1950","AppFHName":"D\/O Loganathan","AppAddress":"lko","PanNumber":"","AppPinCode":"226003","MobileNumber":"9580095801","AltMobNo":"9580095801","State":"1","Distict":"14","Reg_Date":"26\/06\/2023","FormNo":"","GuardianGuardianName":"test","CorresState":"1","CorreDistrict":"14","CorreAddress":"lko","CorrePinCode":"226003","AadhaarCardDetail":"","LocationType":"Semi-Urban","MemberOccupation":"Select","MemberMonthlyIncome":"10000000","GuardianAadharNo":"245484548848","Guardian_DOB":"01\/02\/1950","GuardianGender":"Male","GuardianRelation":"Husband","GuardianOccupation":"Business","GuardianMonthlyIncome":"1000000","MemberLatitude":"26.8738486","MemberLongitude":"81.0058208","MemberAddress":"V2F4+G9V, Ashok Vihar, Patel Nagar, Ismailganj, Indira Nagar, Lucknow, Uttar Pradesh 226028, India"}
